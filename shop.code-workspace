@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "shop",
+			"path": "."
+		},
+		{
+			"name": "blog",
+			"path": "../blog"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "shop"
+	}
+}
