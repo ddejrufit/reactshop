@@ -13,7 +13,7 @@ createRoot(document.getElementById('root')).render(
   // <StrictMode> 
   <QueryClientProvider client={queryClient}>
     <Provider store={store}>
-    <BrowserRouter>
+    <BrowserRouter basename="/reactshop">
     <App />
     </BrowserRouter>
     </Provider>

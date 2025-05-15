@@ -11,7 +11,7 @@ import Cart from './routes/Cart.jsx'
 import { useQuery } from 'react-query';
 
 
-  // 메인페이지 접속시 로딩이 느리니까 필요할때 임포트 하셈
+  // 메인페이지 접속시 로딩할게 많아 느릴때 임포트 
 const Detail = lazy (() => import('./routes/Detail.jsx'));
 
 
@@ -72,7 +72,7 @@ function App() {
         <Navbar bg="dark" data-bs-theme="dark" >
         <Container>
           
-          <Navbar.Brand href="#home">쇼핑몰</Navbar.Brand>
+          <Navbar.Brand onClick={()=>{navigate('/')}}>쇼핑몰</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link onClick={()=>{navigate('/')}}>Home</Nav.Link>
             <Nav.Link onClick={()=>{navigate('/detail/0')}}>Detail</Nav.Link>
